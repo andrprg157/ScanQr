@@ -1,33 +1,71 @@
-# Gradle files
+# === Kotlin / Gradle / Compose Multiplatform ===
+
+# Gradle
 .gradle/
 build/
+!gradle/wrapper/gradle-wrapper.jar
 
-# Local configuration file (sdk path, etc)
+# Kotlin/Compose compiler caches
+.kotlinc/
+.kotlin/
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+
+# Android
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Local configuration
 local.properties
+*.keystore
+captures/
+output.json
 
-# Log/OS Files
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# JetBrains IDE settings
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+.idea/httpRequests
+
+# Logs
 *.log
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output-metadata.json
+# Compose-related
+composeApp/build/
+desktopApp/build/
+androidApp/build/
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# Kotlin Native
+*.klib
+*.konan/
 
-# Keystore files
-*.jks
-*.keystore
+# Misc
+*.swp
+*.swo
+*.bak
+*.tmp
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Dependency caches
+node_modules/
+.yarn/
+npm-debug.log
 
-# Android Profiling
+# Coverage reports
+coverage/
 *.hprof
